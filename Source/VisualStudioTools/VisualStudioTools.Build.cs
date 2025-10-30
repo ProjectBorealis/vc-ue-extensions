@@ -21,10 +21,7 @@ public class VisualStudioTools : ModuleRules
 
             // Enable more restrict warnings during compilation in UE5.
             // Required by tasks in the compliance pipeline.
-            if (Target.Version.MajorVersion >= 5)
-            {
-                UnsafeTypeCastWarningLevel = WarningLevel.Error;
-            }
+	        CppCompileWarningSettings.UnsafeTypeCastWarningLevel = WarningLevel.Error;
         }
         else
         {
