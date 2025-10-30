@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "2.5",
+	"VersionName": "2.7",
 	"FriendlyName": "Visual Studio Integration Tools",
 	"Description": "Enables integration with Visual Studio IDE.",
 	"Category": "Programming",
@@ -21,6 +21,14 @@
 			"Name": "VisualStudioTools",
 			"Type": "Editor",
 			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64"
+			]
+		},
+		{
+			"Name": "VisualStudioBlueprintDebuggerHelper",
+			"Type": "Editor",
+			"LoadingPhase": "None",
 			"PlatformAllowList": [
 				"Win64"
 			]
